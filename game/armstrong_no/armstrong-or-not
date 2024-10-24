@@ -1,0 +1,9 @@
+def isArmstrong(N):
+    leng=len(str(N))
+    sum_power=0
+    for d in str(N):
+        sum_power+=int(d)**leng
+    if sum_power==N:
+        return True
+    else:
+        return False
